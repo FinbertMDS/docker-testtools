@@ -1,9 +1,9 @@
 ### Base image for ichte/tools:
-- debian os
-- mssql-tool
+- debian os 11
+- mssql-tool18
 - php 7.3
 - composer
-- msql-client
+- default-mysql-client
 - lynx
 - pandoc
 - ffmpeg
@@ -11,3 +11,9 @@
 - curl
 - mssql-scripter
 - rclone
+
+# Reference
+https://github.com/xuanthulabnet/docker-testtools
+
+To run in Mac M4, update below
+debian os 11, mssql-tool18, default-mysql-client
