@@ -42,6 +42,8 @@ RUN apt-get update && apt-get install -y locales && rm -rf /var/lib/apt/lists/* 
     && apt -y install php7.3 \
     && apt install php7.3-cli php7.3-fpm php7.3-json php7.3-pdo php7.3-mysql php7.3-zip php7.3-gd  php7.3-mbstring php7.3-curl php7.3-xml php7.3-bcmath php7.3-json -y php-memcached \
     && apt-get install nano htop curl openssh-client default-mysql-client git pandoc lynx ffmpeg -y \
+    && apt-get update -y \
+    && apt-get install -y iputils-ping \
     && curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer \
     && rm -rf /var/lib/apt/lists/* \
